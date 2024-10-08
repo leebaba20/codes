@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.trans{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 2s;
+}
+
+.trans:hover{
+    width: 300px;
+    height: 300px;
+}
+
+.transs{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transition: width 2s; */
+    transition: width 2s, height 4s, transform 2s;
+}
+
+.transs:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+
+.anima{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation-name: lee;
+    animation-duration: 4s;
+}
+
+@keyframes lee{
+    from{background-color: red;}
+    to{background-color: blueviolet;}
+}
+
+@keyframes lee{
+    0% {background-color: red;}
+    30% {background-color: blue;}
+    80% {background-color: orange;}
+    100% {background-color: purple;}
+    50% {background-color: peru;}
+    60% {background-color: lightcoral;}
+    70% {background-color: brown;}
+}
+
+p{
+    border: 1px solid blue;
+    margin-top: 25px;
+}
+
+.list li{
+    padding-top: 20px;
+    box-shadow: 0 2px 3px green;
+}
+
+    
+
